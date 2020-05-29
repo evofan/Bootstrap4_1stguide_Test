@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!--最後のは縮小表示しない：iOS9対応-->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <title>グリッドシステムのサンプル</title>
+  <style>
+    h1 {
+      margin-top: 30px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ここにページ内容を記述 -->
+
+  <h1>グリッドシステムの行内の配置1、左揃え・中央揃え・右揃え</h1>
+  <div class="container-fluid">
+    <div class="row justify-content-start">
+      <div class="col-3" style="background-color: #ffbb88;height: 150px;">ブロックA<br>3ブロック</div>
+      <div class="col-2" style="background-color: #ffddcc;height: 150px;">ブロックB<br>2ブロック</div>
+      <div class="col-3" style="background-color: #ffbb88;height: 150px;">ブロックC<br>3ブロック</div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-3" style="background-color: #6699ff;height: 150px;">ブロックD<br>3ブロック</div>
+      <div class="col-2" style="background-color: #99ccff;height: 150px;">ブロックE<br>2ブロック</div>
+      <div class="col-3" style="background-color: #ccffff;height: 150px;">ブロックF<br>3ブロック</div>
+    </div>
+    <div class="row justify-content-end">
+      <div class="col-3" style="background-color: #336633;height: 150px;">ブロックG<br>3ブロック</div>
+      <div class="col-2" style="background-color: #669966;height: 150px;">ブロックH<br>2ブロック</div>
+      <div class="col-3" style="background-color: #99cc99;height: 150px;">ブロックI<br>3ブロック</div>
+    </div>
+  </div>
+
+  <h1>グリッドシステムの行内の配置2、均等割り付け・各ブロックの左右に均等</h1>
+  <div class="container-fluid">
+    <div class="row justify-content-between">
+      <div class="col-3" style="background-color: #ffbb88;height: 150px;">ブロックA<br>3ブロック</div>
+      <div class="col-2" style="background-color: #ffddcc;height: 150px;">ブロックB<br>2ブロック</div>
+      <div class="col-3" style="background-color: #ffbb88;height: 150px;">ブロックC<br>3ブロック</div>
+    </div>
+    <div class="row justify-content-around">
+      <div class="col-3" style="background-color: #6699ff;height: 150px;">ブロックD<br>3ブロック</div>
+      <div class="col-2" style="background-color: #99ccff;height: 150px;">ブロックE<br>2ブロック</div>
+      <div class="col-3" style="background-color: #ccffff;height: 150px;">ブロックF<br>3ブロック</div>
+    </div>
+  </div>
+
+  <h1>グリッドシステムの行内の配置3、上揃え・中央揃え・下揃え</h1>
+  <div class="container-fluid">
+    <div class="row align-items-start">
+      <div class="col-3" style="background-color: #ffbb88;height: 130px;">ブロックA<br>3ブロック</div>
+      <div class="col-2" style="background-color: #ffddcc;height: 100px;">ブロックB<br>2ブロック</div>
+      <div class="col-3" style="background-color: #ffbb88;height: 70px;">ブロックC<br>3ブロック</div>
+    </div>
+    <div class="row align-items-center">
+      <div class="col-3" style="background-color: #6699ff;height: 130px;">ブロックD<br>3ブロック</div>
+      <div class="col-2" style="background-color: #99ccff;height: 100px;">ブロックE<br>2ブロック</div>
+      <div class="col-3" style="background-color: #ccffff;height: 70px;">ブロックF<br>3ブロック</div>
+    </div>
+    <div class="row align-items-end">
+      <div class="col-3" style="background-color: #336633;height: 130px;">ブロックG<br>3ブロック</div>
+      <div class="col-2" style="background-color: #669966;height: 100px;">ブロックH<br>2ブロック</div>
+      <div class="col-3" style="background-color: #99cc99;height: 70px;">ブロックI<br>3ブロック</div>
+    </div>
+  </div>
+
+  <h1>グリッドシステムの行内の配置4、各ブロックに対し上揃え・中央揃え・下揃え</h1>
+  <div class="container-fluid">
+    <div class="row" style="height:180px;border: solid 1px #000000;">
+      <div class="col-5 align-self-start" style="background-color: #ffbb88;height: 90px;">ブロックA<br>5ブロック</div>
+      <div class="col-4 align-self-center" style="background-color: #ffddcc;height: 90px;">ブロックB<br>4ブロック</div>
+      <div class="col-3 align-self-end" style="background-color: #ffbb88;height: 90px;">ブロックC<br>3ブロック</div>
+    </div>
+    <div class="row" style="border: solid 1px #000000;">
+      <div class="col-5 align-self-start" style="background-color: #6699ff;height: 180px;">ブロックD<br>5ブロック</div>
+      <div class="col-4 align-self-center" style="background-color: #99ccff;height: 100px;">ブロックE<br>4ブロック</div>
+      <div class="col-3 align-self-end" style="background-color: #ccffff;height: 100px;">ブロックF<br>3ブロック</div>
+    </div>
+  </div>
+
+
+  <script src="js/jquery-3.3.1.slim.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
