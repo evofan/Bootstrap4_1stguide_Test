@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!--最後のは縮小表示しない：iOS9対応-->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <title>グリッドシステムのサンプル</title>
+  <style>
+    h1 {
+      margin-top: 30px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ここにページ内容を記述 -->
+
+  <h1>ブロック間隔の指定、offset-Nの使用</h1>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-3" style="background-color: #ffbb88;height: 150px;">ブロックA<br>3ブロック</div>
+      <div class="col-3 offset-3" style="background-color: #ffddcc;height: 150px;">ブロックB<br>3ブロック</div>
+    </div>
+    <div class="row">
+      <div class="col-3 offset-3" style="background-color: #6699ff;height: 150px;">ブロックC<br>3ブロック</div>
+      <div class="col-3 offset-3" style="background-color: #99ccff;height: 150px;">ブロックD<br>3ブロック</div>
+    </div>
+    <div class="row">
+      <div class="col-3" style="background-color: #336633;height: 150px;">ブロックE<br>3ブロック</div>
+      <div class="col-3 offset-3" style="background-color: #669966;height: 150px;">ブロックF<br>3ブロック</div>
+    </div>
+  </div>
+
+  <h1>ブロック間隔の指定、ml-auto・mr-autoの使用</h1>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-3" style="background-color: #ffbb88;height: 150px;">ブロックA<br>3ブロック</div>
+      <div class="col-3 ml-auto" style="background-color: #ffddcc;height: 150px;">ブロックB<br>3ブロック</div>
+    </div>
+    <div class="row">
+      <div class="col-3 ml-auto" style="background-color: #6699ff;height: 150px;">ブロックC<br>3ブロック</div>
+      <div class="col-3 ml-auto" style="background-color: #99ccff;height: 150px;">ブロックD<br>3ブロック</div>
+    </div>
+    <div class="row">
+      <div class="col-3 ml-auto" style="background-color: #336633;height: 150px;">ブロックE<br>3ブロック</div>
+      <div class="col-3 mr-auto" style="background-color: #669966;height: 150px;">ブロックF<br>3ブロック</div>
+    </div>
+    <div class="row">
+      <div class="col-3 ml-auto" style="background-color: #336633;height: 150px;">ブロックE<br>3ブロック</div>
+      <div class="col-4 mr-auto" style="background-color: #669966;height: 150px;">ブロックF<br>4ブロック<br>offset-Nと違って3.5のように小数点以下の間隔も可</div>
+    </div>
+  </div>
+
+  <script src="js/jquery-3.3.1.slim.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

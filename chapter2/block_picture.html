@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!--最後のは縮小表示しない：iOS9対応-->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <title>グリッドシステムのサンプル</title>
+  <style>
+    h1 {
+      margin-top: 30px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ここにページ内容を記述 -->
+
+  <h1>ブロックに合わせて画像を表示</h1>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-6 px-0" style="background-color: #ffddcc;height: 450px;">ブロックA<br>6ブロック<br><img src="images/lighthouse-1.jpg" alt="" class="img-fluid"></div>
+      <div class="col-3 px-0" style="background-color: #6699ff;height: 450px;">ブロックB<br>3ブロック<br><img src="images/lighthouse-2.jpg" alt="" class="img-fluid"></div>
+      <div class="col-3 px-0" style="background-color: #99cc99;height: 450px;">ブロックC<br>3ブロック<br><img src="images/lighthouse-3.jpg" alt="" class="img-fluid"></div>
+    </div>
+  </div>
+  <p>px-0： 左右に0パディング、pl-4：左に1.5remパディング、py-1：上下に
+    0.25remパディング
+  </p>
+
+  <h1>ブロックに合わせて画像を表示、高さ指定無し</h1>
+  <div class="container-fluid">
+    <div class="row no-gutters">
+      <div class="col-6"><img src="images/lighthouse-1.jpg" alt="" class="img-fluid"></div>
+      <div class="col-3"><img src="images/lighthouse-2.jpg" alt="" class="img-fluid"><img src="images/lighthouse-4.jpg" alt="" class="img-fluid"></div>
+      <div class="col-3"><img src="images/lighthouse-3.jpg" alt="" class="img-fluid"><img src="images/lighthouse-5.jpg" alt="" class="img-fluid"></div>
+    </div>
+  </div>
+  <p>no-guttersでも指定出来るが、スマホで見た時にネガティブマージンが取り消されるので、px-0指定のほうが良い（画面一杯に画像が表示される）<br>
+    また文章がある場合もno-guttersでは隣との隙間がなくなり読みづらくなる
+  </p>
+
+  <script src="js/jquery-3.3.1.slim.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
