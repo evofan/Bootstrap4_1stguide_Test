@@ -21,13 +21,37 @@
   <h1>画面サイズに応じたレイアウト</h1>
 
 
-  <h2>■ 画面サイズに応じて列幅を変更</h2>
+  <h2>■ 画面サイズに応じて列幅を変更</h2><!-- col-sm-Nで指定 576px(★ブレイクポイント)未満時は各列を12（横幅一杯）で表示 -->
+  <!-- col-sm-N ... 576px以上 スマホ横想定-->
+  <!-- col-md-N ... 768px以上 タブレット想定-->
+  <!-- col-lg-N ... 992px以上 パソコン想定-->
+  <!-- col-xl-N ... 1200px以上 大画面PC想定-->
 
   <div class="container">
     <div class="row">
-      <div class="col-sm-6" style="background-color: #ffcc99;height: 200px;">ブロックC<br>6ブロック</div>
-      <div class="col-sm-3" style="background-color: #99aaff;height: 200px;">ブロックD<br>3ブロック</div>
-      <div class="col-sm-3" style="background-color: #ccff99;height: 200px;">ブロックE<br>3ブロック</div>
+      <div class="col-sm-6" style="background-color: #ffcc99;height: 200px;">ブロックA<br>6ブロック</div>
+      <div class="col-sm-3" style="background-color: #99aaff;height: 200px;">ブロックB<br>3ブロック</div>
+      <div class="col-sm-3" style="background-color: #ccff99;height: 200px;">ブロックC<br>3ブロック</div>
+    </div>
+    <p>PCでは横並び、スマホでは縦並びに表示される</p>
+  </div>
+
+  <h2>■ 画面サイズに応じて列幅を変更(col-lg-N指定)</h2>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5" style="background-color: #ffcc99;height: 200px;">ブロックD<br>5ブロック</div>
+      <div class="col-lg-4" style="background-color: #99aaff;height: 200px;">ブロックE<br>4ブロック</div>
+      <div class="col-lg-3" style="background-color: #ccff99;height: 200px;">ブロックF<br>3ブロック</div>
+    </div>
+    <p>PCでは横並び、スマホでは縦並びに表示される</p>
+  </div>
+
+  <h2>■ 画面サイズに応じて列幅を変更、等分割、768px以上で変化</h2>
+  <div class="container">
+    <div class="row">
+      <div class="col-md" style="background-color: #ffcc99;height: 200px;">ブロックA<br>1/3ブロック</div>
+      <div class="col-md" style="background-color: #99aaff;height: 200px;">ブロックB<br>1/3ブロック</div>
+      <div class="col-md" style="background-color: #ccff99;height: 200px;">ブロックC<br>1/3ブロック</div>
     </div>
     <p>PCでは横並び、スマホでは縦並びに表示される</p>
   </div>

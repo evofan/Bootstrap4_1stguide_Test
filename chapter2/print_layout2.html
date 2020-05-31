@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!--最後のは縮小表示しない：iOS9対応-->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <title>グリッドシステムのサンプル</title>
+  <style>
+    h2 {
+      margin-top: 30px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ここにページ内容を記述 -->
+
+  <h1>グリッドシステムの印刷</h1>
+
+
+  <h2>■ 印刷時に要素を非表示に、d-print-none</h2>
+
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-lg-9">
+
+        <div class="row">
+          <div class="col-12" style="background-color: #ffcc99;height: 100px;">
+            <h3>新着情報</h3>
+          </div>
+          <div class="col-12 d-print-none" style="background-color: #99aaff;height: 100px;">
+            <h3>広告</h3>
+          </div>
+          <div class="col-lg-6" style="background-color: #ccff99;height: 200px;">
+            <h3>記事A</h3>
+          </div>
+          <div class="col-lg-6" style="background-color: #990099;height: 200px;">
+            <h3>記事B</h3>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-lg-3 d-print-none" style="background-color: #999999;height: 400px;"><!--要素は消えるが、領域は残るので注意-->
+        <h3>サイドバー</h3>
+      </div>
+
+    </div>
+
+
+  </div>
+
+
+  <script src="js/jquery-3.3.1.slim.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

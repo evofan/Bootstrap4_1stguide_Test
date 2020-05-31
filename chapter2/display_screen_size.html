@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!--最後のは縮小表示しない：iOS9対応-->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <title>グリッドシステムのサンプル</title>
+  <style>
+    h2 {
+      margin-top: 30px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ここにページ内容を記述 -->
+
+  <h1>画面サイズに応じたレイアウト</h1>
+
+
+
+  <h2>■ 画面サイズに応じて表示・非表示を変更、d-none</h2>
+  <div class="container">
+    <div class="row">
+      <div class="col" style="background-color: #ffcc99;height: 150px;">ブロックA</div>
+    </div>
+    <div class="row">
+      <div class="col-md-6" style="background-color: #ccff99;height: 150px;">ブロックB</div>
+      <div class="col d-md-none" style="background-color: #000000;height: 75px;">
+        <!--768px以上で広告が出ない-->
+        <h3 style="color:#ffffff">スマホ広告</h3>
+      </div>
+      <div class="col-md-6" style="background-color: #99aaff;height: 150px;">ブロックC</div>
+    </div>
+  </div>
+
+  <h2>■ 画面サイズに応じて表示・非表示を変更、d-block</h2>
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-8" style="background-color: #ccff99;height: 150px;">ブロックA</div>
+      <div class="col-md-4 d-none d-md-block" style="background-color: #ff0000;height: 150px;">
+        <h3 style="color:#ffffff">PC広告</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col" style="background-color: #ffcc99;height: 150px;">ブロックA</div>
+    </div>
+    <div class="row">
+      <div class="col-md-6" style="background-color: #ccff99;height: 150px;">ブロックB</div>
+      <div class="col d-md-none" style="background-color: #000000;height: 75px;">
+        <!--768px以上で広告が出ない-->
+        <h3 style="color:#ffffff">スマホ広告</h3>
+      </div>
+      <div class="col-md-6" style="background-color: #99aaff;height: 150px;">ブロックC</div>
+    </div>
+  </div>
+
+
+  <script src="js/jquery-3.3.1.slim.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

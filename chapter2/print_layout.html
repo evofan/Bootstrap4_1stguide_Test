@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!--最後のは縮小表示しない：iOS9対応-->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <title>グリッドシステムのサンプル</title>
+  <style>
+    h2 {
+      margin-top: 30px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ここにページ内容を記述 -->
+
+  <h1>グリッドシステムの印刷</h1>
+
+
+  <h2>■ 印刷サイズの確認</h2>
+
+  <div class="container"><!--レスポンシブでは細かい指定はできないので、印刷用ページを作るのがよい-->
+    <div class="row">
+      <div class="col-7" style="background-color: #ffcc99;height: 100px;"><h3>col-7</h3></div>
+      <div class="col-sm-7" style="background-color: #99aaff;height: 100px;"><h3>col-sm-7</h3></div>
+      <div class="col-md-7" style="background-color: #ccff99;height: 100px;"><h3>col-md-7</h3></div>
+      <div class="col-lg-7" style="background-color: #990099;height: 100px;"><h3>col-lg-7</h3></div>
+      <div class="col-xl-7" style="background-color: #999999;height: 100px;"><h3>col-xl-7</h3></div>
+    </div>
+  </div>
+
+
+  <h2>■ サイズlgで変化するレイアウト</h2>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6"><img src="images/lighthouse-1.jpg" alt="" class="img-fluid"></div>
+      <div class="col-lg-6 mt-4 mt-lg-0">
+        <h3>灯台の役割</h3>
+        <p>沿岸を航行する船が、現在の位置を把握したり、・・・・・撤去する動きがあるようです。</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/jquery-3.3.1.slim.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
