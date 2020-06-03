@@ -25,46 +25,39 @@
 
   <h1>フレックスボックスの活用</h1>
 
-  <h2 class="my-3">■ フレックスボックスの基本</h2>
+  <h2 class="my-3">■ アイテムの折り返し、flex-wrap</h2>
   <div class="container">
-    <div class="d-flex bg-info">
+    <div class="d-flex flex-wrap bg-info">
       <div class="bg-warning m-2 p-3">札幌</div>
+      <div class="bg-warning m-2 p-3">仙台</div>
       <div class="bg-warning m-2 p-3">東京</div>
+      <div class="bg-warning m-2 p-3">横浜</div>
       <div class="bg-warning m-2 p-3">名古屋</div>
+      <div class="bg-warning m-2 p-3">京都</div>
       <div class="bg-warning m-2 p-3">大阪</div>
+      <div class="bg-warning m-2 p-3">神戸</div>
+      <div class="bg-warning m-2 p-3">広島</div>
       <div class="bg-warning m-2 p-3">福岡</div>
+      <div class="bg-warning m-2 p-3">熊本</div>
+      <div class="bg-warning m-2 p-3">那覇</div>
     </div>
   </div>
 
-  <h2 class="my-3">■ アイテムの配置、justify-content-～</h2>
+  <h2 class="my-3">■ 折り返し時に上下位置指定、flex-wrap + align-content-between</h2>
   <div class="container">
-    <div class="d-flex justify-content-center bg-info">
+    <div class="d-flex flex-wrap align-content-between bg-info" style="height: 200px;">
       <div class="bg-warning m-2 p-3">札幌</div>
+      <div class="bg-warning m-2 p-3">仙台</div>
       <div class="bg-warning m-2 p-3">東京</div>
+      <div class="bg-warning m-2 p-3">横浜</div>
       <div class="bg-warning m-2 p-3">名古屋</div>
+      <div class="bg-warning m-2 p-3">京都</div>
       <div class="bg-warning m-2 p-3">大阪</div>
+      <div class="bg-warning m-2 p-3">神戸</div>
+      <div class="bg-warning m-2 p-3">広島</div>
       <div class="bg-warning m-2 p-3">福岡</div>
-    </div>
-  </div>
-  <p>&nbsp;</p>
-  <div class="container">
-    <div class="d-flex justify-content-around bg-info">
-      <div class="bg-warning m-2 p-3">札幌</div>
-      <div class="bg-warning m-2 p-3">東京</div>
-      <div class="bg-warning m-2 p-3">名古屋</div>
-      <div class="bg-warning m-2 p-3">大阪</div>
-      <div class="bg-warning m-2 p-3">福岡</div>
-    </div>
-  </div>
-
-  <h2 class="my-3">■ アイテムの配置、縦・横方向</h2>
-  <div class="container">
-    <div class="d-flex flex-column bg-info">
-      <div class="bg-warning m-2 p-3">札幌</div>
-      <div class="bg-warning m-2 p-3">東京</div>
-      <div class="bg-warning m-2 p-3">名古屋</div>
-      <div class="bg-warning m-2 p-3">大阪</div>
-      <div class="bg-warning m-2 p-3">福岡</div>
+      <div class="bg-warning m-2 p-3">熊本</div>
+      <div class="bg-warning m-2 p-3">那覇</div>
     </div>
   </div>
 
