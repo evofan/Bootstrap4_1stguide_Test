@@ -23,22 +23,152 @@
 
   <!-- ここにページ内容を記述 -->
 
-  <div class="container-fluid">
+  <div class="container">
 
     <h1>カード</h1>
 
     <h2 class="my-3">■ Cardの色</h2>
 
-    <div class="card bg-primary text-white" style="width:300px">
-      <div class="card-body">
-        <h4 class="card-header">カードのヘッダー</h4>
-        <div class="card-title">カードのタイトル</div>
-        <p class="card-text">沿岸を航行する船が現在の位置を、・・・・・・建造された建物が灯台です。</p>
-        <a href="aaa.html" class="card-link">続きを読む</a>
-        <a href="images/lighthouse-1.jpg" class="card-link">灯台の写真</a>
+    <div class="row">
+
+      <div class="card bg-primary text-white" style="width:300px">
+        <div class="card-body">
+          <h4 class="card-header">カードのヘッダー</h4>
+          <div class="card-title">カードのタイトル</div>
+          <p class="card-text">沿岸を航行する船が現在の位置を、・・・・・・建造された建物が灯台です。</p>
+          <a href="aaa.html" class="card-link">続きを読む</a>
+          <a href="images/lighthouse-1.jpg" class="card-link">灯台の写真</a>
+        </div>
       </div>
+
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="card bg-success text-white">
+          <h4 class="card-header">Card header</h4>
+          <div class="card-body">
+            <h5 class="card-title">カードのタイトル</h5>
+            <p class="card-text">カード全体にbg-successの背景色が適用されています。また、文字色をtext-whiteのクラスで白色に変更しています。</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="card bg-dark text-white">
+          <h4 class="card-header">Card header</h4>
+          <div class="card-body">
+            <h5 class="card-title">カードのタイトル</h5>
+            <p class="card-text">カード全体にbg-darkの背景色が適用されています。また、文字色をtext-whiteのクラスで白色に変更しています。</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="card">
+          <h4 class="card-header bg-info text-white">Card header</h4>
+          <div class="card-body">
+            <h5 class="card-title">カードのタイトル</h5>
+            <p class="card-text">ヘッダーとフッターに異なる背景色が適用されています。必要に応じて、文字色を白色に変更しています。</p>
+          </div>
+          <div class="card-footer bg-secondary text-white">Card footer</div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="card">
+          <h4 class="card-header bg-warning">Card header</h4>
+          <div class="card-body">
+            <h5 class="card-title">カードのタイトル</h5>
+            <p class="card-text">ヘッダーとフッターに異なる背景色が適用されています。必要に応じて、文字色を白色に変更しています。</p>
+          </div>
+          <div class="card-footer bg-secondary text-white">Card footer</div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="card">
+          <h4 class="card-header bg-dark text-white">Card header</h4>
+          <div class="card-body bg-danger text-white">
+            <h5 class="card-title">カードのタイトル</h5>
+            <p class="card-text">ヘッダー、カード本体、フッターに異なる背景色が適用されています。必要に応じて、文字色を白色に変更しています。</p>
+          </div>
+          <div class="card-footer bg-warning">Card footer</div>
+        </div>
+      </div>
+
     </div>
- 
+
+
+    <h2 class="my-3">■ Cardの色、枠線</h2>
+
+    <div class="row">
+
+
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="card border-primary text-primary">
+          <h4 class="card-header">Card header</h4>
+          <div class="card-body">
+            <h5 class="card-title">カードのタイトル</h5>
+            <p class="card-text">カード全体にborder-primaryのクラスを適用しています。文字色も text-primaryのクラスで変更しています。</p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="card border-success">
+          <h4 class="card-header text-success">Card header</h4>
+          <div class="card-body">
+            <h5 class="card-title">カードのタイトル</h5>
+            <p class="card-text">カード全体にboreder-successのクラスを適用しています。また、ヘッダーの文字色をtext-successに変更しています。</p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="card border-danger">
+          <h4 class="card-header text-danger">Card header</h4>
+          <div class="card-body">
+            <h5 class="card-title text-danger">カードのタイトル</h5>
+            <p class="card-text">カード全体にboreder-dangerのクラスを適用しています。また、ヘッダーとタイトルの文字色をtext-dangerに変更しています。</p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="card border-primary text-primary">
+          <h4 class="card-header border-primary">Card header</h4>
+          <div class="card-body">
+            <h5 class="card-title">カードのタイトル</h5>
+            <p class="card-text">カード全体だけでなく、ヘッダー・フッターにもborder-primaryのクラスを適用すると、このように枠線が着色されます。</p>
+          </div>
+          <div class="card-footer border-primary">Card footer</div>
+        </div>
+      </div>
+  
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="card">
+          <h4 class="card-header border-success">Card header</h4>
+          <div class="card-body">
+            <h5 class="card-title">カードのタイトル</h5>
+            <p class="card-text">カード全体ではなく、ヘッダー・フッターだけにborder-successのクラスを適用すると、このような結果になります。</p>
+          </div>
+          <div class="card-footer border-success">Card footer</div>
+        </div>
+      </div>
+  
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="card bg-dark text-white">
+          <h4 class="card-header border-white">Card header</h4>
+          <div class="card-body">
+            <h5 class="card-title">カードのタイトル</h5>
+            <p class="card-text">カード全体にbg-darkの背景色を適用し、ヘッダー・フッターにborder-whiteのクラスを適用すると、このような結果になります。</p>
+          </div>
+          <div class="card-footer border-white">Card footer</div>
+        </div>
+      </div>
+      
+    </div>
+
+  </div>
+
 
   <script src="js/jquery-3.3.1.slim.min.js"></script>
   <script src="js/popper.min.js"></script>
