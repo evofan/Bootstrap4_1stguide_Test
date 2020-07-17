@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!--最後のは縮小表示しない：iOS9対応-->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <title>フォーム</title>
+  <style>
+    h2 {
+      margin-top: 30px;
+    }
+
+    .red {
+      font-weight: bold;
+      color: #ff0000;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ここにページ内容を記述 -->
+
+  <div class="container">
+
+    <h1>フォーム</h1>
+
+    <h2 class="mt-4 mb-5">■ 購入フォーム</h2>
+
+
+    <form>
+
+      <div class="form-group mb-4">
+        <label for="receipt">領収書（プルダウン）</label>
+        <select class="form-control" id="receipt">
+          <option>お届け先氏名で領収書を発行</option>
+          <option>指定した氏名で領収書を発行</option>
+          <option>領収書は不要</option>
+        </select>
+      </div>
+
+      <div class="form-group mb-4">
+        <label for="receipt2">領収書2（セレクトメニュー）</label>
+        <select class="custom-select" id="receipt2">
+          <option>お届け先氏名で領収書を発行</option>
+          <option>指定した氏名で領収書を発行</option>
+          <option>領収書は不要</option>
+        </select>
+      </div>
+
+      <button type="submit" class="btn btn-primary">送信</button>
+
+    </form>
+
+  </div>
+
+
+  <script src="js/jquery-3.3.1.slim.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
