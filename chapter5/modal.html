@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!--最後のは縮小表示しない：iOS9対応-->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <title>モーダルダイアログ</title>
+  <style>
+    h2 {
+      margin-top: 30px;
+    }
+
+    .red {
+      font-weight: bold;
+      color: #ff0000;
+    }
+  </style>
+</head>
+
+<body style="padding-top: 5rem;padding-bottom: 5rem;">
+
+  <!-- ここにページ内容を記述 -->
+
+  <div class="container">
+
+    <h2 class="mt-4 mb-0">モーダルダイアログ</h2>
+    <hr class="mt-2 mb-4">
+
+    <button class="btn btn-info" data-toggle="modal" data-target="#holiday">今月の休業日</button>
+
+
+    <div class="modal fade" id="holiday" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <h5 class="modal-title">2020年9月の休業日</h5>
+            <button class="close" data-dismiss="modal"><span>&times;</span></button>
+          </div>
+
+          <div class="modal-body">
+            9月の定休日は<b>7日, 14日, 21日, 28日</b>です。
+          </div>
+
+          <div class="modal-footer">
+            <p class="mb-0 mr-3">boot dining渋谷店</p>
+            <button class="btn btn-secondary" data-dismiss="modal">閉じる</button>
+          </div>
+
+
+        </div>
+      </div>
+
+
+    </div>
+
+  </div>
+
+
+  <script src="js/jquery-3.3.1.slim.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
