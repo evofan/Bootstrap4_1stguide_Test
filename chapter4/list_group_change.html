@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!--最後のは縮小表示しない：iOS9対応-->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <title>リストグループ</title>
+  <style>
+    h2 {
+      margin-top: 30px;
+    }
+
+    .red {
+      font-weight: bold;
+      color: #ff0000;
+    }
+  </style>
+</head>
+
+<body style="padding-top: 5rem;padding-bottom: 5rem;">
+
+  <!-- ここにページ内容を記述 -->
+
+  <div class="container">
+
+    <h2 class="mt-5">■ 店舗一覧</h2>
+    <hr class="mt-0 mb-2">
+    <p>店舗を選択すると、<span class="d-md-none">下に</span>連絡先が表示されます。</p>
+
+    <div class="row">
+      <div class="col-md-6">
+
+        <div class="list-group">
+          <a href="#shibuya" class="list-group-item list-group-item-action active" data-toggle="list">渋谷店</a>
+          <a href="#yoyogi" class="list-group-item list-group-item-action" data-toggle="list">代々木店</a>
+          <a href="#meguro" class="list-group-item list-group-item-action" data-toggle="list">目黒店</a>
+          <a href="#baba" class="list-group-item list-group-item-action" data-toggle="list">高田馬場店</a>
+          <a href="#ikebukuro" class="list-group-item list-group-item-action" data-toggle="list">池袋店</a>
+        </div>
+
+      </div>
+
+      <div class="col-md-6 mt-4 mt-md-0">
+
+        <div class="tab-content bg^light p-3">
+          <div class="tab-pane fade show active" id="shibuya">
+            <h5 class="mb-1">渋谷店</h5>
+            <address class="mb-0 small">東京都渋谷区円山町0-0-0<br>TEL 03-1234-xxxx</address>
+            <p>営業時間<br>（平日）10:00-23:00<br>（土日・休日）11:30-24:00</p>
+          </div>
+          <div class="tab-pane fade" id="yoyogi">
+            <h5 class="mb-1">代々木店</h5>
+            <address class="mb-0 small">東京都渋谷区ooooo<br>TEL 03-1234-xxxx</address>
+            <p>営業時間<br>（平日）10:00-23:00<br>（土日・休日）11:30-24:00</p>
+          </div>
+          <div class="tab-pane fade" id="meguro">
+            <h5 class="mb-1">目黒店</h5>
+            <address class="mb-0 small">東京都目黒区ooooo<br>TEL 03-1234-xxxx</address>
+            <p>営業時間<br>（平日）10:00-23:00<br>（土日・休日）11:30-24:00</p>
+          </div>
+          <div class="tab-pane fade" id="baba">
+            <h5 class="mb-1">高田馬場店</h5>
+            <address class="mb-0 small">東京都新宿区ooooo<br>TEL 03-1234-xxxx</address>
+            <p>営業時間<br>（平日）10:00-23:00<br>（土日・休日）11:30-24:00</p>
+          </div>
+          <div class="tab-pane fade" id="ikebukuro">
+            <h5 class="mb-1">池袋店</h5>
+            <address class="mb-0 small">東京都豊島区ooooo<br>TEL 03-1234-xxxx</address>
+            <p>オープン予定</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <script src="js/jquery-3.3.1.slim.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
