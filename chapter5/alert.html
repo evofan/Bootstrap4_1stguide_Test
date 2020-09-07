@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!--最後のは縮小表示しない：iOS9対応-->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <title>アラート</title>
+  <style>
+    h2 {
+      margin-top: 30px;
+    }
+
+    .red {
+      font-weight: bold;
+      color: #ff0000;
+    }
+  </style>
+</head>
+
+<body style="padding-top: 5rem;padding-bottom: 5rem;">
+
+  <!-- ここにページ内容を記述 -->
+
+  <div class="container">
+
+    <h2 class="mt-4 mb-0">アラート</h2>
+    <hr class="mt-2 mb-4">
+
+    <div class="alert alert-danger">
+      氏名は必ず全角数字で入力して下さい。
+    </div>
+    <div class="alert alert-info">
+      2018/05/22 利用規約の一部を更新しました。<br>
+      2018/05/15 7月の予約受付を開始しました。<br>
+    </div>
+
+    <div class="alert alert-info alert-dismissible fade show">
+      2018/05/22 利用規約の一部を更新しました。<br>
+      2018/05/15 7月の予約受付を開始しました。<br>
+      <button class="close" data-dismiss="alert">&times;</button>
+    </div>
+
+
+    <div class="alert alert-danger alert-dismissible fade show">
+      <h5 class="alert-heading">新着情報</h5>
+      <hr>
+      2018/04/09 <a href="https://getbootstrap.com" class="alert-link">Bootstrap 4.1</a>の配布開始<br>
+      2018/04/01 テストサーバーの運用を開始<br>
+      <hr>
+      2018/03/25 会員数が10万人を突破<br>
+      2018/03/02 会員数が5万人を突破<br>
+      <button class="close" data-dismiss="alert">&times;</button>
+    </div>
+
+  </div>
+
+
+  <script src="js/jquery-3.3.1.slim.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
