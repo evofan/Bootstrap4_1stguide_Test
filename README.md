@@ -11,3 +11,6 @@ reference
 
 **Bootstrap4ファーストガイド―CSS設計の手間を大幅に削減!**  
 [https://www.amazon.co.jp/dp/487783432X](https://www.amazon.co.jp/dp/487783432X)  
+
+**Font Awesomeアイコンを素早く検索しコピー**  
+[https://www.pixelimage.jp/blog/2015/07/font_awesome.html](https://www.pixelimage.jp/blog/2015/07/font_awesome.html)  
